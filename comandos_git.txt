@@ -1,0 +1,52 @@
+git init 						# para iniciar um repositótorio git 
+git init --bare 					# para iniciar um reposiorio final, geralmente em servidor
+
+git config --global user.name "Leonardo Comelli" 	# setar usuario
+git config --global user.email leonardo@software-ltda.com.br # setar e-mail
+git config --list  # listar configurações
+
+git status #verifica status dos arquivos
+
+
+
+git add nome_arquivo			# adiciona arquivo para ser comitado
+git add . 				# adiciona todos arquivos alterados para commitar
+git commit -m "primeiro_commit" 	# cria um commit
+
+git reset HEAD meu_arquivo.txt   	# Este comando deve ser utilizando quando o arquivo já foi adicionado na staged area.
+
+git rm meu_arquivo.txt 			# remover arquivo do diretorio
+git rm -r diretorio			# remover diretorio
+
+git checkout -- arquivo.txt 		# volta para seu estado original desde o último commit
+
+git reset arquivo.txt			# para retirar uma arquivo da area stage (antes do commit)
+
+git reset HEAD~1			# desfaz o ultimo commit e mante as alterações
+git reset --hard HEAD~1 		# desfaz o ultimo commit e volta para o commit anterior excluindo alterações
+
+git clone git@github.com:leocomelli/curso-git.git # clonar  repositótio
+
+git remote -v 				# exibir repositótios remotos
+git remote add origin git@github.com:leocomelli/curso-git.git 	# adicionar um remote
+git remote set-url origin git://suaUrl  # alterar um remote existente
+git remote rename origin curso-git 	# renomear um repositorio remoto 
+git remote rm curso-git   `		# desvincular um repositório remoto
+
+git push origin master  		# enviar arquivo para repositótio remote
+git pull origin master 			# atualizar repositorio local
+
+git checkout branch_nova 		# cria uma nova branch
+git checkout -b brach_nova		# cria e vai para a nova branch
+git checkout branch_existente 		# muda para uma brach existente
+
+git branch -d nome_branch		# apagar uma branch
+git branch				# listar branchs
+git branch -v				# Listar branches com informações dos últimos commits
+git branch --merged			# Listar branches que já foram fundidos (merged) com o master
+git branch --no-merged			# Listar branches que não foram fundidos (merged) com o master
+
+git merge branch_alterada 		# deve estar na branch principal e coloca o nome da branch alterada para fazer merge
+
+
+
