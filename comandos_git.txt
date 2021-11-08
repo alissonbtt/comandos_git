@@ -1,8 +1,8 @@
 git init 						# para iniciar um repositótorio git 
 git init --bare 					# para iniciar um reposiorio final, geralmente em servidor
 
-git config --global user.name "Leonardo Comelli" 	# setar usuario
-git config --global user.email leonardo@software-ltda.com.br # setar e-mail
+git config --global user.name "alisson Bittenocurt" 	# setar usuario
+git config --global user.email alison_btt@hotmail.com # setar e-mail
 git config --list  # listar configurações
 
 git status #verifica status dos arquivos
